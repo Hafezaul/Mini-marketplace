@@ -1,0 +1,30 @@
+body {
+    background-image: url(assets/background-body.jpg);
+    background-size: cover; /* Memastikan gambar menutupi seluruh elemen */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-attachment: fixed; /* Menjaga gambar tetap pada posisinya saat scroll */
+}
+.gam{
+    border-right:2px solid black;;
+    border-left:2px solid black;
+    border-top:2px solid black;
+    border-radius:25px ;
+}
+.center{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mama{
+    margin: auto;
+}
+.btn-white{
+    border-radius:50%;
+}
+.btn-white:hover{
+    background-color: rgba(21, 3, 99, 0.753);
+    transition:ease-in 2s;
+
+}

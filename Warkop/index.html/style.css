@@ -1,0 +1,16 @@
+body {
+    background-image: url(assets/background-body.jpg);
+    background-size: cover; /* Memastikan gambar menutupi seluruh elemen */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-attachment: fixed; /* Menjaga gambar tetap pada posisinya saat scroll */
+}
+.text{
+    text-align: center;
+}
+.buttons{
+    border-radius: 50%;
+}
+.offcanvas-half {
+    height: 50vh; 
+  }
