@@ -7,6 +7,11 @@
     <link rel="icon" href="assets/kopi-ikon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Nerko+One&display=swap" rel="stylesheet">
+    <!--Font-->
 </head>
   <body>
    <!--Navbar atas-->
@@ -32,8 +37,8 @@
               Other
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Contact</a></li>
-              <li><a class="dropdown-item" href="#">About us</a></li>
+              <li><a class="dropdown-item" href="load.html">Contact</a></li>
+              <li><a class="dropdown-item" href="load.html">About us</a></li>
             </ul>
           </li>
         </ul>
@@ -42,143 +47,34 @@
   </nav>
   <br>
    <div class="container">
-    <div class="conainer-fluid">
-      <!--Food Page-->
-      <div class="row">
-          <div class="col-md-4 medium">
-            <img src="assets/Nasi-Goreng.jpg" class="img img-fluid gam mt-2" alt="Nasi Goreng">
-            <h3>Nasi Goreng</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod nulla, odit possimus reprehenderit autem illo quae quaerat ipsam, velit ducimus distinctio, nisi beatae id facere dolorem animi. Aut, voluptatibus!</p>
-            <!--Start Offcanvas-->
-            <button class="btn btn-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Pesan</button>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Apakah Anda yakin ingin membeli Nasi Goreng?</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <img src="assets/Nasi-Goreng.jpg" class="img img-fluid gam" alt="Nasi Goreng"/>
-                <div>
-                  <p>*Anda akan membeli Nasi Goreng ini kan?</p>
-                  <button class="btn btn-primary w-100">Beli</button>
+    <div class="conainer-fluid">  
+          <h4 class=" text-center" id="myText">Menu Utama Kami Disini</h4>
+          <div id="app">
+            <br>
+            <div class="row row1">
+              <section class="col-md-4">
+                <div v-html="cardHtml"  class="m-3"></div>
+              </section>
+              <section class="col-md-4">
+                <div v-html="cardHtml1" class="m-3"></div>
+              </section>
+              <section class="col-md-4">
+                <div v-html="cardHtml2"  class="m-3"></div>
+              </section>
+            </div>
+            <div>
+              <div class="card w-100">
+                <div class="card-body">
+                  <h5 class="card-title">Ingin Pesan?</h5>
+                  <p class="card-text">Silahkkan klik tombol di bawah ini</p>
+                  <a href="#" class="btn btn-primary position-relative translate-middle-x start-50 end-75">Hubungi Kami</a>
                 </div>
               </div>
             </div>
-            <!--End Offcanvas-->
-          </div>
-          <div class="col-md-4 medium">
-            <img src="assets/Nasi-Goreng.jpg" class="img img-fluid gam mt-2" alt="Nasi Goreng">
-            <h3>Nasi Goreng</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod nulla, odit possimus reprehenderit autem illo quae quaerat ipsam, velit ducimus distinctio, nisi beatae id facere dolorem animi. Aut, voluptatibus!</p>
-              <!--Start Offcanvas-->
-              <button class="btn btn-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Pesan</button>
-              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Apakah Anda yakin ingin membeli Nasi Goreng?</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <img src="assets/Nasi-Goreng.jpg" class="img img-fluid" alt="Nasi Goreng"/>
-                  <div>
-                    <p>*Anda akan membeli Nasi Goreng ini kan?</p>
-                    <button class="btn btn-primary w-100">Beli</button>
-                  </div>
-                </div>
-              </div>
-              <!--End Offcanvas-->
-          </div>
-          <div class="col-md-4 medium">
-            <img src="assets/Nasi-Goreng.jpg" class="img img-fluid gam mt-2" alt="Nasi Goreng">
-            <h3>Nasi Goreng</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod nulla, odit possimus reprehenderit autem illo quae quaerat ipsam, velit ducimus distinctio, nisi beatae id facere dolorem animi. Aut, voluptatibus!</p>
-              <!--Start Offcanvas-->
-              <button class="btn btn-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Pesan</button>
-              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Apakah Anda yakin ingin membeli Nasi Goreng?</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <img src="assets/Nasi-Goreng.jpg" class="img img-fluid" alt="Nasi Goreng"/>
-                  <div>
-                    <p>*Anda akan membeli Nasi Goreng ini kan?</p>
-                    <button class="btn btn-primary w-100"><a href="payment.html">Beli</a></button>
-                  </div>
-                </div>
-              </div>
-              <!--End Offcanvas-->
-          </div>
-          <!--Drink Page-->
-          <div class="center">
-          <div class="row">
-            <div class="col-md-4 medium">
-              <img src="kopi.jpg" class="img img-fluid gam mt-2" alt="Kopi">
-              <h3>Kopi</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod nulla, odit possimus reprehenderit autem illo quae quaerat ipsam, velit ducimus distinctio, nisi beatae id facere dolorem animi. Aut, voluptatibus!</p>
-              <!--Start Offcanvas-->
-              <button class="btn btn-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Pesan</button>
-              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Apakah Anda yakin ingin membeli Kopi?</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <img src="kopi.jpg" class="img img-fluid gam" alt="Kopi"/>
-                  <div>
-                    <p>*Anda akan membeli Kopi ini kan?</p>
-                    <button class="btn btn-primary w-100">Beli</button>
-                  </div>
-                </div>
-              </div>
-              <!--End Offcanvas-->
-            </div>
-            <div class="col-md-4 medium">
-              <img src="kopi.jpg" class="img img-fluid gam mt-2" alt="Kopi">
-              <h3>Kopi</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod nulla, odit possimus reprehenderit autem illo quae quaerat ipsam, velit ducimus distinctio, nisi beatae id facere dolorem animi. Aut, voluptatibus!</p>
-              <!--Start Offcanvas-->
-              <button class="btn btn-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Pesan</button>
-              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Apakah Anda yakin ingin membeli Kopi?</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <img src="assets/kopi.jpg" class="img img-fluid gam" alt="Kopi"/>
-                  <div>
-                    <p>*Anda akan membeli Kopi ini kan?</p>
-                    <button class="btn btn-primary w-100">Beli</button>
-                  </div>
-                </div>
-              </div>
-              <!--End Offcanvas-->
-            </div>
-            <div class="col-md-4 medium">
-              <img src="kopi.jpg" class="img img-fluid gam mt-2" alt="Kopi">
-              <h3>Kopi</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod nulla, odit possimus reprehenderit autem illo quae quaerat ipsam, velit ducimus distinctio, nisi beatae id facere dolorem animi. Aut, voluptatibus!</p>
-              <!--Start Offcanvas-->
-              <button class="btn btn-primary w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Pesan</button>
-              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Apakah Anda yakin ingin membeli Kopi?</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <img src="assets/kopi.jpg" class="img img-fluid gam" alt="Kopi"/>
-                  <div>
-                    <p>*Anda akan membeli Kopi ini kan?</p>
-                    <button class="btn btn-primary w-100"><a href="payment.html">Beli</a></button>
-                  </div>
-                </div>
-              </div>
-              <!--End Offcanvas-->
-            </div>
-          </div>
-          </div>
-      </div>
+          </div>       
+          <!--Food Content End-->
     </div>
-   </div>
+    </div>
 <!--footer-->
 <footer>
   <hr>
@@ -199,7 +95,8 @@
   </div>
 </footer>
 
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Importe file JavaScript sebagai module -->
+  <script type="module" src="main.js">
+  </script>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

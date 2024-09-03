@@ -7,59 +7,21 @@ body {
     background-color: #030325;
    
 }
-.myPara{
-    
-    border:2px solid white;
-    border-radius:25px;
-}
-.text{
-    text-align: center;
-}
-
-}
-.buttons{
-    border-radius: 50%;
-}
-.offcanvas-half {
-    height: 50vh; 
+/* CSS */
+.row1 {
+    margin-left: 0; /* Gaya default */
   }
-  .button:hover{
-    color:black;
+  .margin{
+    margin:auto;
   }
-
-  /*menu styling*/
-  h5 {
-    text-align: center;
+#myText{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.parent {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-gap: 1rem;
-    background-color: #f8f9fa;
-    padding: 1rem;
-}
-.div1A, .div2B, .div3C, .div4D {
-    color:black;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    text-align: center;
-}
-
-svg {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-}
-@media (min-width: 576px) {
-    .parent {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
+  @media (min-width: 576px) {
+    .row1 {
+      margin-left: 250px;
     }
-}
-@media (min-width: 768px) {
-    .parent {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, auto);
-    }
-}
+  }
+  
